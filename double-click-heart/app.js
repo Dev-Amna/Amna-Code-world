@@ -1,10 +1,10 @@
-const loveMe = document.querySelector('.loveMe')
+const likeMe = document.querySelector('.likeMe')
 const times = document.querySelector('#times')
 
 let clickTime = 0
 let timesClicked = 0
 
-loveMe.addEventListener('click', (e) => {
+likeMe.addEventListener('click', (e) => {
     if(clickTime === 0) {
         clickTime = new Date().getTime()
     } else {
@@ -34,7 +34,7 @@ const createHeart = (e) => {
     heart.style.top = `${yInside}px`
     heart.style.left = `${xInside}px`
 
-    loveMe.appendChild(heart)
+    likeMe.appendChild(heart)
 
     times.innerHTML = ++timesClicked
 

@@ -1,14 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald');
 
 * {
   box-sizing: border-box;
+  color: white;
 }
 
 body {
   font-family: 'Oswald', sans-serif;
   text-align: center;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
   margin: 0;
+
+  background-color: black;
 }
 
 h3 {
@@ -26,10 +33,10 @@ small {
   color: red;
 }
 
-.loveMe {
+.likeMe {
   height: 440px;
-  width: 300px;
-  background: url('https://images.unsplash.com/photo-1504215680853-026ed2a45def?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80')
+  width: 500px;
+  background: url('amna.png')
     no-repeat center center/cover;
   margin: auto;
   cursor: pointer;
@@ -37,9 +44,10 @@ small {
   position: relative;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   overflow: hidden;
+  border-radius: 12px;
 }
 
-.loveMe .fa-heart {
+.likeMe .fa-heart {
   position: absolute;
   animation: grow 0.6s linear;
   transform: translate(-50%, -50%) scale(0);
